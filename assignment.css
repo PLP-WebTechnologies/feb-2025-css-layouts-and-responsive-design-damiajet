@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+#header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#header h1 {
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar Styling */
+#nav {
+    margin-top: 10px;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#nav li {
+    margin: 0 15px;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+#nav a:hover {
+    background-color: #fff;
+    color: #2e8b57;
+    border-radius: 5px;
+}
+
+/* Content Area */
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#feature {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#feature h2 {
+    color: #2e8b57;
+    font-size: 2em;
+}
+
+#feature p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#feature a {
+    text-decoration: none;
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+/* Columns */
+.article {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.column1 {
+    width: 30%;
+}
+
+.column2 {
+    width: 30%;
+}
+
+.column3 {
+    width: 30%;
+}
+
+.article h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article p,
+.article ul {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.article ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+#footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    #nav ul {
+        flex-direction: column;
+    }
+
+    #nav li {
+        margin: 10px 0;
+    }
+}
